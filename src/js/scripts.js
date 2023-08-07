@@ -448,7 +448,7 @@ function organizeCollaborators(collaborators) {
         $('.previous').hide();
     }
 
-    if (user.length < limit) {
+    if (collaborators.length < limit) {
         $('.next').hide();
     } else {
         $('.next').show();
