@@ -434,7 +434,7 @@ function organizeCollaborators(collaborators) {
         html = html.replace(/{{CEP}}/g, Collaborator.CEP);
         html = html.replace(/{{cidade}}/g, Collaborator.cidade);
         html = html.replace(/{{estado}}/g, Collaborator.estado);
-        html = html.replace(/{{longradouro}}/g, Collaborator.logradouro);
+        html = html.replace(/{{logradouro}}/g, Collaborator.logradouro);
         html = html.replace(/{{numero}}/g, Collaborator.numero);
         html = html.replace(/{{bairro}}/g, Collaborator.bairro);
         html = html.replace(/{{complemento}}/g, Collaborator.complemento);
@@ -518,7 +518,7 @@ function organizeSearch(collaborator) {
         html = html.replace(/{{CEP}}/g, collaborators.CEP);
         html = html.replace(/{{cidade}}/g, collaborators.cidade);
         html = html.replace(/{{estado}}/g, collaborators.estado);
-        html = html.replace(/{{longradouro}}/g, collaborators.logradouro);
+        html = html.replace(/{{logradouro}}/g, collaborators.logradouro);
         html = html.replace(/{{numero}}/g, collaborators.numero);
         html = html.replace(/{{bairro}}/g, collaborators.bairro);
         html = html.replace(/{{complemento}}/g, collaborators.complemento);
@@ -704,7 +704,7 @@ function pesquisacep(valor) {
             document.body.appendChild(script);
         } else {
             limpa_formulário_cep();
-            alert("Formato de CEP inválido.");
+            modalAlertCEP();
         }
     } else {
         limpa_formulário_cep();
@@ -719,7 +719,7 @@ function meu_callback(conteudo) {
         document.getElementById('txtLogradouro').value=(conteudo.logradouro);
     } else {
         limpa_formulário_cep();
-        alert("CEP não encontrado.");
+        modalAlertCEP();
     }
 }
 
@@ -947,4 +947,18 @@ function deleteCollaborators(id, name) {
             });
         }
     });
+}
+
+function modalAlertCEP() {
+    let html = $('#templateModalAlert').html(); 
+    $('.h-modal-title').html('Atenção');
+    $('.c-modal').html(html);
+    $('#mensagem').text('CEP não encontrado.');
+    toggleModal();
+
+    $(".btn").click(function () {
+        $('.fp-modal').hide();
+    });
+
+    $('.fp-modal').show();
 }

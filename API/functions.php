@@ -124,7 +124,11 @@ class Functions
             $current = $limit * ($page - 1);
 
         try {
-            $sql = "SELECT id AS id, nome AS nome, sobrenome AS sobrenome, CEP AS CEP, cidade AS cidade, estado AS estado, logradouro AS logradouro, numero AS numero, bairro AS bairro, complemento AS complemento from colaboradores WHERE nome LIKE :search";
+            $sql = "SELECT id AS id, nome AS nome, sobrenome AS sobrenome, CEP AS CEP, cidade AS cidade, estado AS estado, logradouro AS logradouro, numero AS numero, bairro AS bairro, complemento AS complemento from colaboradores WHERE
+            nome LIKE :search
+            OR sobrenome LIKE :search
+            OR cidade LIKE :search
+            OR CEP LIKE :search;";
 
             if ($limit)
                 $sql .= ' ORDER BY nome DESC LIMIT :current, :limit';

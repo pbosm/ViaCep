@@ -19,8 +19,8 @@
     <td data-column="estado" style="white-space: nowrap">
         {{estado}}
     </td>
-    <td data-column="longradouro" style="white-space: nowrap">
-        {{longradouro}}
+    <td data-column="logradouro" style="white-space: nowrap">
+        {{logradouro}}
     </td>
     <td data-column="numero" style="white-space: nowrap">
         {{numero}}
@@ -184,7 +184,7 @@
                             </th>
                             <th>Logradouro
                                 <span class="order" data-table-order="false" data-column-order="logradouro-collaborators"
-                                    onclick="toggleTableOrder('logradouro-collaborators', 'numeric')">
+                                    onclick="toggleTableOrder('logradouro-collaborators', 'alphabet')">
                                     <i class="fas fa-sort-up"></i>
                                     <i class="fas fa-sort-down"></i>
                                 </span>
@@ -198,14 +198,14 @@
                             </th>
                             <th>Bairro
                                 <span class="order" data-table-order="false" data-column-order="bairro-collaborators"
-                                    onclick="toggleTableOrder('bairro-collaborators', 'numeric')">
+                                    onclick="toggleTableOrder('bairro-collaborators', 'alphabet')">
                                     <i class="fas fa-sort-up"></i>
                                     <i class="fas fa-sort-down"></i>
                                 </span>
                             </th>
                             <th>Complemento
                                 <span class="order" data-table-order="false" data-column-order="complemento-collaborators"
-                                    onclick="toggleTableOrder('complemento-collaborators', 'numeric')">
+                                    onclick="toggleTableOrder('complemento-collaborators', 'alphabet')">
                                     <i class="fas fa-sort-up"></i>
                                     <i class="fas fa-sort-down"></i>
                                 </span>
@@ -223,7 +223,7 @@
 
         <div class="col-3">
             <div class="rounded p-4" style="height: 97%; background-color: antiquewhite;">
-                <h6 class="mb-4">Registros de cadastro</h6>
+                <h6 class="texto-canvas mb-4" style="text-align: center;">Registros de cadastro</h6>
                 <canvas id="line-chart"></canvas>
             </div>
         </div>

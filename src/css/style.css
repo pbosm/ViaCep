@@ -452,3 +452,10 @@ input.form-control.bg-dark.border-0 {
 label#txtNames-error {
     color: white;
 }
+
+@media (max-width: 768px) {
+    .texto-canvas.mb-4 {
+        font-size: 14px;
+        margin: -25px;
+    }
+}
