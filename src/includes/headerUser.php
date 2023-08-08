@@ -28,6 +28,16 @@ $verificaAcesso->verificaAcesso();
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script src="../js/scripts.js"></script>
 
+    <script type="text/html" id="templateModalAlert">
+        <div class="row ml-0">
+            <div class="col-12">
+                <p id="mensagem" style="text-align: center"></p>
+            </div>
+                <button class="btn w-100 mt-3" style="background-color: aqua;">Ok</button>
+            </div>
+        </div>
+    </script>
+
     <div class="x-loader">
         <div class="container">
             <div class="row">

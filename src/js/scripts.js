@@ -719,7 +719,7 @@ function meu_callback(conteudo) {
         document.getElementById('txtLogradouro').value=(conteudo.logradouro);
     } else {
         limpa_formulário_cep();
-        modalAlertCEP();
+        modalAlertCEP()
     }
 }
 
@@ -950,15 +950,16 @@ function deleteCollaborators(id, name) {
 }
 
 function modalAlertCEP() {
-    let html = $('#templateModalAlert').html(); 
-    $('.h-modal-title').html('Atenção');
-    $('.c-modal').html(html);
-    $('#mensagem').text('CEP não encontrado.');
     toggleModal();
 
+    let html = $('#templateModalAlert').html(); 
+    $('.fp-modal').css('display', 'flex');
+    $('.h-modal-title').text('Atenção');
+    $('.c-modal').html(html);
+    $('#mensagem').text('CEP não encontrado.');
+
     $(".btn").click(function () {
-        $('.fp-modal').hide();
+        location.reload();
     });
 
-    $('.fp-modal').show();
 }

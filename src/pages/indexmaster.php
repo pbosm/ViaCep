@@ -32,7 +32,7 @@
         {{complemento}}
     </td>
     <td style="white-space: nowrap;" class="text-center">
-        <button class="btn btn-actions" onclick="updateUser('{{id}}', '{{nome}}', '{{sobrenome}}', '{{CEP}}', '{{cidade}}', '{{estado}}', '{{longradouro}}', '{{numero}}', '{{bairro}}', '{{complemento}}')" tooltip="Editar usuário" style="background-color: #0d6efd;">
+        <button class="btn btn-actions" onclick="updateUser('{{id}}', '{{nome}}', '{{sobrenome}}', '{{CEP}}', '{{cidade}}', '{{estado}}', '{{logradouro}}', '{{numero}}', '{{bairro}}', '{{complemento}}')" tooltip="Editar usuário" style="background-color: #0d6efd;">
             <i class="fas fa-edit"></i>
         </button>
     </td>
