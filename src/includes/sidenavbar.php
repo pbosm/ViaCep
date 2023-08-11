@@ -2,7 +2,7 @@
 <div class="sidebar pe-4 pb-3">
     <nav class="navbar navbar-dark">
         <a href="" class="navbar-brand mx-4 mb-3">
-            <h1 class="text-primary" style="font-size: 14px;"><i class="fa fa-user-edit me-2"></i>Teste Tecnico Concept Prime</h1>
+            <h1 class="text-primary" style="font-size: 14px;"><i class="fa fa-user-edit me-2"></i>ViaCep</h1>
         </a>
         <div class="d-flex align-items-center ms-4 mb-4">
             <div class="position-relative">

@@ -8,7 +8,7 @@ class Database
         $db_host = 'localhost';
         $db_user = 'root';
         $db_password = '';
-        $db_name = 'TestePratico';
+        $db_name = 'bdteste';
         $db_driver = "mysql";
         $options = array( PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION );
         // $host     = getenv("host");railway
